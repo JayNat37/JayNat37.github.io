@@ -12,16 +12,22 @@ body {
       padding-bottom: 1vh;
   }
   .container {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 400px;
     margin: 0 auto;
     background-color: rgba(255, 255, 255, .6) ;
     padding: 20px;
     border-radius: 10px;
   }
+  .container-large {
+    width: 400px;
+  }
+  .container-centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+
   .gradiented {
     background: linear-gradient(to right,#1d73c4, #c70606 );
   }
@@ -70,8 +76,8 @@ body {
   #logo-text {
     color:white;
     font-size: 5vh;
-    font-weight: 600;
-    letter-spacing: -0.1vh;
+    font-weight: 700;
+    letter-spacing: -0.06vh;
   }
   #bing-nav {
     padding-top: 3vh;

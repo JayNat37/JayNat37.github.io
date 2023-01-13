@@ -4,18 +4,18 @@
   <title>Sign In</title>
   <!-- Add some CSS styles -->
   <link rel="stylesheet" href="styles/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:900,800,700,400,600,300,200,100" rel="stylesheet" type="text/css">
 </head>
 <body class="gradiented">
   <nav id="bing-nav">
     <h1 id="logo-text">Plan.ner</h1>
   </nav>
   <!-- Create a div element to contain the form elements -->
-  <div class="container">
+  <div class="container container-large container-centered">
     <!-- Create a heading element to display the title -->
     <h1 class="container-title">Sign In</h1>
     <!-- Create a form element to get the user input -->
-    <form id="login-form">
+    <form id="login-form" action="mainpage.html">
       <!-- Create a label and an input element for the username -->
       <label for="username">Username</label>
       <input type="text" id="username" name="username" required>
@@ -23,9 +23,7 @@
       <label for="password">Password</label>
       <input type="password" id="password" name="password" required>
       <!-- Create a button element to submit the form -->
-      <a>
-        <button id="login-button">Sign In</button>
-      </a>
+      <button id="login-button">Sign In</button>
       <p>
         Have no account? <a href="signup.html"> Sign Up</a>
       </p>
