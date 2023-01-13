@@ -1,11 +1,76 @@
-<!DOCTYPE html>
+<!-- Create a login/signup HTML file -->
 <html>
-    <head>
-        <link rel="stylesheet" href="/styles/style.css">
-    </head>
-    <body>
-        <nav>
-            <h1>WEBSITE YOU COOCK</h1>
-        </nav>
-    </body>
-</html>
+<head>
+  <title>Login</title>
+  <!-- Add some CSS styles -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right,#1886eb, #c70606 );
+      background-size: 100%;
+      background-color: #cccccc;
+    }
+    .container {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 400px;
+      margin: 0 auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    h1 {
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin: 10px 0;
+    }
+    input {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      border: 1px solid gray;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    button {
+      display: block;
+      width: 100%;
+      padding: 15px;
+      background-color: blue;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+    .message {
+      color: red;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- Create a div element to contain the form elements -->
+  <div class="container">
+    <!-- Create a heading element to display the title -->
+    <h1>Login or Signup</h1>
+    <!-- Create a form element to get the user input -->
+    <form id="login-form">
+      <!-- Create a label and an input element for the username -->
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" required>
+      <!-- Create a label and an input element for the password -->
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+      <!-- Create a button element to submit the form -->
+      <a>
+        <button type="submit" id="login-button">Login</button>
+      </a>
+      
+
+    </form>
+    <!-- Create a paragraph element to display the message -->
+    <p id="message" class="message"></p>
+  </div>
