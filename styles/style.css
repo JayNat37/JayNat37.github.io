@@ -1,0 +1,79 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    background-size: 100%;
+    background-color: #cccccc;
+    margin: 0px;
+  }
+  nav {
+      margin: 0px;
+      padding-left: 5vw;
+      padding-right: 5vw;
+      padding-top: 1vh;
+      padding-bottom: 1vh;
+  }
+  .container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, .6) ;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .gradiented {
+    background: linear-gradient(to right,#1d73c4, #c70606 );
+  }
+
+  h1 {
+    font-size: 4vh;
+    margin: 0px;
+  }
+  a {
+    color: #1d73c4;
+    font-weight: 600;
+  }
+  label {
+    display: block;
+    margin: 10px 0;
+  }
+  input {
+    display: block;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 0px solid gray;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  button {
+    display: block;
+    font-weight: 600;
+    width: 100%;
+    padding: 15px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  .message {
+    color: red;
+    text-align: center;
+  }
+  .container-title {
+    text-align: center;
+    color:black;
+  }
+  #logo-text {
+    color:white;
+    font-size: 5vh;
+    font-weight: 600;
+    letter-spacing: -0.1vh;
+  }
+  #bing-nav {
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+  }

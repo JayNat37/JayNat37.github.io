@@ -1,7 +1,7 @@
 <!-- Create a login/signup HTML file -->
 <html>
 <head>
-  <title>Sign In</title>
+  <title>Login</title>
   <!-- Add some CSS styles -->
   <link rel="stylesheet" href="styles/style.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
@@ -13,22 +13,26 @@
   <!-- Create a div element to contain the form elements -->
   <div class="container">
     <!-- Create a heading element to display the title -->
-    <h1 class="container-title">Sign In</h1>
+    <h1 class="container-title">Signup</h1>
     <!-- Create a form element to get the user input -->
     <form id="login-form">
       <!-- Create a label and an input element for the username -->
       <label for="username">Username</label>
       <input type="text" id="username" name="username" required>
+       <!-- Create a label and an input element for the password -->
+       <label for="password">E-mail</label>
+       <input type="password" id="password" name="password" required>
       <!-- Create a label and an input element for the password -->
       <label for="password">Password</label>
       <input type="password" id="password" name="password" required>
       <!-- Create a button element to submit the form -->
-      <a>
-        <button id="login-button">Sign In</button>
+      <a href="index.html">
+        <button type="submit" id="login-button">Login</button>
       </a>
       <p>
-        Have no account? <a href="signup.html"> Sign Up</a>
+        Already Have an account? <a href="index.html"> Sign In</a>
       </p>
+      
       
 
     </form>
