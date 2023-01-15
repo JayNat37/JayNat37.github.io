@@ -7,13 +7,45 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:900,800,700,400,600,300,200,100" rel="stylesheet" type="text/css">
 </head>
 <body>
+  <div id="popupadd" class="popup-background">
+    <div class="popup">
+      <div class="horizontal-content center-content">
+        <h1 class="bar-content"> Add goal</h1>
+        <a class="btn-small bar-content bar-content-right btn-red btn-text-symbol button" href="#">&#215;</a>
+        
+      </div>
+    </div>
+  </div>
+  <div id="popupedit" class="popup-background">
+    <div class="popup">
+      <div class="horizontal-content center-content">
+        <h1 class="bar-content"> Edit/whatever</h1>
+        <a class="btn-small bar-content bar-content-right btn-red btn-text-symbol button" href="#">&#215;</a>
+        
+      </div>
+    </div>
+  </div>
   <nav class="gradiented">
     <h1 id="logo-text">Plan.ner</h1>
   </nav>
   <div class="row">
-    <div class="col-70">
+    <div class="col-70 y-scrollable">  
+      <div class="horizontal-content center-content">
+        <h1 class="bar-content">Goal list</h1>
+        <a class="btn-small bar-content bar-content-right btn-green btn-text-symbol button" href="#popupadd">&#43;</a>
+      </div>
       <div class="grid-container">
         <!-- Create a div element to contain the form elements -->
+        <div class="container container-grid-element">
+          <div style="margin: 10px;">
+          <!-- Create a heading element to display the title -->
+          <h1 class="container-title title-small">Goal 1</h1>
+          <p><b>Description: </b> Blah blah</p>
+          <a class="btn-small button" href="#popupedit">Edit/whatever</a>
+          <!-- Create a paragraph element to display the message -->
+          <p id="message" class="message"></p>
+          </div>
+        </div>
         <div class="container container-grid-element">
           <div style="margin: 10px;">
           <!-- Create a heading element to display the title -->
@@ -23,64 +55,41 @@
           <p id="message" class="message"></p>
           </div>
         </div>
-        <!-- Create a div element to contain the form elements -->
         <div class="container container-grid-element">
-          <!-- Create a heading element to display the title -->
-          <h1 class="container-title title-small">Sign In</h1>
-          <!-- Create a form element to get the user input -->
-          <!-- Create a paragraph element to display the message -->
-          <p id="message" class="message"></p>
-        </div>
-        <!-- Create a div element to contain the form elements -->
-        <div class="container container-grid-element">
-          <!-- Create a heading element to display the title -->
-          <h1 class="container-title title-small">Sign In</h1>
-          <!-- Create a form element to get the user input -->
-          <!-- Create a paragraph element to display the message -->
-          <p id="message" class="message"></p>
-        </div>
-        <div class="container container-grid-element">
-          <!-- Create a heading element to display the title -->
-          <h1 class="container-title title-small">Sign In</h1>
-          <!-- Create a form element to get the user input -->
-          <!-- Create a paragraph element to display the message -->
-          <p id="message" class="message"></p>
-        </div>
-        <div class="container container-grid-element">
+          <div style="margin: 10px;">
           <!-- Create a heading element to display the title -->
           <h1 class="container-title title-small">Goal 1</h1>
-          <!-- Create a form element to get the user input -->
+          <p><b>Description: </b> Blah blah</p>
           <!-- Create a paragraph element to display the message -->
           <p id="message" class="message"></p>
-        </div>
-        <!-- Create a div element to contain the form elements -->
-        <div class="container container-grid-element">
-          <!-- Create a heading element to display the title -->
-          <h1 class="container-title title-small">Sign In</h1>
-          <!-- Create a form element to get the user input -->
-          <!-- Create a paragraph element to display the message -->
-          <p id="message" class="message"></p>
-        </div>
-        <!-- Create a div element to contain the form elements -->
-        <div class="container container-grid-element">
-          <!-- Create a heading element to display the title -->
-          <h1 class="container-title title-small">Sign In</h1>
-          <!-- Create a form element to get the user input -->
-          <!-- Create a paragraph element to display the message -->
-          <p id="message" class="message"></p>
+          </div>
         </div>
         <div class="container container-grid-element">
+          <div style="margin: 10px;">
           <!-- Create a heading element to display the title -->
-          <h1 class="container-title title-small">Sign In</h1>
-          <!-- Create a form element to get the user input -->
+          <h1 class="container-title title-small">Goal 1</h1>
+          <p><b>Description: </b> Blah blah</p>
           <!-- Create a paragraph element to display the message -->
           <p id="message" class="message"></p>
+          </div>
+        </div>
+        <div class="container container-grid-element">
+          <div style="margin: 10px;">
+          <!-- Create a heading element to display the title -->
+          <h1 class="container-title title-small">Goal 1</h1>
+          <p><b>Description: </b> Blah blah</p>
+          <!-- Create a paragraph element to display the message -->
+          <p id="message" class="message"></p>
+          </div>
         </div>
       </div>
     </div>
     <div class="col-30">
 
     </div>
+  </div>
+  <div id="footer" class="gradiented">
+
   </div>
   
 </body> 

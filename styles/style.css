@@ -3,6 +3,10 @@ body {
     background-size: 100%;
     background-color: #cccccc;
     margin: 0px;
+    height: 100vh;
+    font-size: 1.5vh;
+    display: flex;
+    flex-direction: column;
 }
 nav {
     margin: 0px;
@@ -22,6 +26,38 @@ nav {
     float: left;
     margin:0px;
     padding: 0px;
+}
+.popup-background {
+    /* cheating */
+    z-index: 20;
+    transition: opacity 400ms;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+.popup-background:target {
+    visibility: visible;
+    opacity: 1;
+}
+.popup {
+    position: relative;
+    margin: 50px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    width: 50%;
+    transition: all 3s ease-in-out;
+
+
+}
+.y-scrollable {
+    overflow-y: scroll;
+    height: 80vh;
 }
 .col-30 {
     width: 30%;
@@ -66,7 +102,25 @@ nav {
 .gradiented {
     background: linear-gradient(to right,#1d73c4, #c70606 );
 }
-
+.horizontal-content {
+    display: flex;
+    position: relative;
+    
+    margin: 10px;
+    max-width: 100%;
+}
+.bar-content {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.bar-content-right {
+    position: absolute;
+    right: 0;
+}
+.center-content {
+    align-items: center;
+    justify-content: center;    
+}
 h1 {
     font-size: 4vh;
     margin: 0px;
@@ -90,13 +144,40 @@ input {
     border-radius: 8px;
     margin-bottom: 20px;
 }
-button {
-    display: block;
-    font-weight: 600;
+/* since we cant use JS... */
+.button {
+    display: flex;
+    font-weight: 700;
     width: 100%;
-    padding: 15px;
-    background-color: blue;
+    padding: 13px;
     color: white;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.btn-small {
+    width: fit-content;
+}
+/* When the button */
+.btn-text-symbol {
+    font-size: 3vh;
+    font-weight: 900;
+    padding: 3px 10px 4px 10px;
+}
+.btn-green {
+    background-color:#05a95c;
+}
+.btn-red {
+    background-color:#f44336;
+}
+button {
+    display: flex;
+    font-weight: 700;
+    width: 100%;
+    padding: 13px;
+    color: white;
+    background-color: blue;
     border: none;
     border-radius: 5px;
 }
@@ -120,4 +201,8 @@ button {
 #bing-nav {
     padding-top: 3vh;
     padding-bottom: 3vh;
+}
+#footer {
+    height: 100%;
+    
 }
