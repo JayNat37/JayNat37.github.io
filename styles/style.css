@@ -172,6 +172,8 @@ input {
     background-color:#f44336;
 }
 button {
+    text-align: center;
+    justify-content: center;
     display: flex;
     font-weight: 700;
     width: 100%;
@@ -205,4 +207,8 @@ button {
 #footer {
     height: 100%;
     
+}
+#sign-out {
+    top: 2vh;
+    right: 10px;
 }
