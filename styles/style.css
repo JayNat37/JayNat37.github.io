@@ -46,7 +46,8 @@ nav {
 }
 .popup {
     position: relative;
-    margin: 50px;
+    margin: auto;
+    margin-top: 10vh;
     padding: 25px;
     background-color: white;
     border-radius: 10px;
