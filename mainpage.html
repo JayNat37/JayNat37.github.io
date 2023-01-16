@@ -19,41 +19,40 @@
           <label for="name">Goal Name</label>
           <input placeholder="Acing My Chemistry Midterms" type="text" id="name" name="name" required>
           <label for="name">Goal Description</label>
-          <textarea placeholder="Specific - Measurable - Achievable - Relevant - Time Based" name="" id="" cols="30" rows="4"></textarea>
+          <textarea placeholder="Specific - Measurable - Achievable - Relevant - Time Based" name="" id="" cols="30" rows="6"></textarea>
           <label>Breakdowns</label>
           <input placeholder="Read Chapter 6" type="text">
-          <input placeholder="Complete a practice exam" type="text">
-          <input placeholder="Get an 80% on a practice" type="text">
+          <button type="button"> Add a breakdown </button>
           <label> Due Date </label>
           <input type="date">
-          <button id="login-button">Add Goal</button>
+          <button id="login-button"> Add Goal </button>
         </form>
       </div>
     </div>
   </div>
+  
   <div id="popupedit" class="popup-background">
-    <div class="goalspopup">
-      <div class="center-content">
-        <h1 class="bar-content" > <center> Getting better at school </center></h1>
+    <div class="popup">
+      <div class="horizontal-content center-content">
+        <h1 class="bar-content">Goal details</h1>
         <a class="btn-small bar-content bar-content-right btn-red btn-text-symbol button" href="#">&#215;</a>
-        <h2> <center > <b>Description</b> </center></h2>
-        <p> <center> Specific: Ace my chemistry midterms</center></p>
-        <p> <center> Measurable: Many practice exams to complete and homework</center></p>
-        <p> <center> Achievable: If I study hard and focus I will be able to ace it </center></p>
-        <p> <center> Relevant: Will allow a greater career in chemistry  </center></p>
-        <p> <center> Time Based: By the end of this school year </center></p>
-        <br/>
-        <h3> <center > <b> Break downs</b> </center></h3>
-        <p> <center> Read chapter 6</center> </p>
-        <p> <center> Take a practice exam</center> </p>
-        <p> <center> Get 80% on a mock exam </center> </p>
-        <br/>
-        <h3><center> <b> Due Date </b> </center></h3>
-        <p> <center> 30th July, 2023 </center></p>
-
-
       </div>
-      
+      <div id="goal-add-form">
+        <form id="login-form" action="#">
+          <!-- Create a label and an input element for the username -->
+          <label for="name">Goal Name</label>
+          <input value="Acing My Chemistry Midterms" type="text" id="name" name="name" required>
+          <label for="name">Goal Description</label>
+          <textarea rows="5">Specific: Ace my chemistry midterms&#13;Measurable: Many practice exams to complete and homework&#13;Achievable: If I study hard and focus I will be able to ace it&#13;Relevant: Will allow a greater career in chemistry&#13;Time Based: By the end of this school year </textarea>
+          <label>Breakdowns</label>
+          <input value="Read Chapter 6" type="text">
+          <input value="Complete a practice exam" type="text">
+          <input value="Get an 80% on a practice" type="text">
+          <label> Due Date </label>
+          <input type="date" value="2023-07-30">
+          <button id="login-button"> Save Changes </button>
+        </form>
+      </div>
     </div>
   </div> 
 
