@@ -50,7 +50,7 @@ nav {
     margin: auto;
     margin-top: 10vh;
     padding: 25px;
-    background-color: white;
+    background-color: #f2f2f2;
     border-radius: 10px;
     width: 50%;
     transition: all 3s ease-in-out;
@@ -150,6 +150,18 @@ input {
     border-radius: 8px;
     margin-bottom: 20px;
 }
+textarea {
+    display: block;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 0px solid gray;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    resize: none;
+}
 /* since we cant use JS... */
 .button {
     display: flex;
@@ -225,4 +237,9 @@ button {
 #sign-out {
     top: 2vh;
     right: 10px;
+}
+#goal-add-form {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
 }
