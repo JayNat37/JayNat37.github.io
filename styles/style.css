@@ -106,7 +106,7 @@ nav {
     margin: 20px;
 }
 .gradiented {
-    background: linear-gradient(to right,#1d73c4, #c70606 );
+    background: linear-gradient(to right,#2C58CA, #C70606 );
 }
 .horizontal-content {
     display: flex;
