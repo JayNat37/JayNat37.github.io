@@ -145,15 +145,25 @@ label {
 }
 input {
     display: block;
-    width: 100%;
+    width: 90%;
     padding-top: 15px;
     padding-bottom: 15px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-right: 20px;
     border: 0px solid gray;
     border-radius: 8px;
     margin-bottom: 20px;
 }
+.input-invalid {
+    border-color: #C70606;
+    border-width: 2px;
+}
+.input-valid {
+    border-color:  #05a95c;
+    border-width: 2px;
+}
+
 textarea {
     display: block;
     width: 100%;

@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <!-- Create a login/signup HTML file -->
 <html>
 <head>
@@ -15,18 +16,18 @@
     <!-- Create a heading element to display the title -->
     <h1 class="container-title">Sign Up</h1>
     <!-- Create a form element to get the user input -->
-    <form id="login-form">
+    <form id="signup-form" onsubmit="return formValidate()">
       <!-- Create a label and an input element for the username -->
       <label for="username">Username</label>
       <input type="text" id="username" name="username" required>
        <!-- Create a label and an input element for the password -->
-       <label for="password">E-mail</label>
-       <input type="password" id="password" name="password" required>
+       <label for="email">E-mail</label>
+       <input type="text" id="email" name="email" required>
       <!-- Create a label and an input element for the password -->
       <label for="password">Password</label>
       <input type="password" id="password" name="password" required>
       <!-- Create a button element to submit the form -->
-      <button type="submit" id="login-button">Login</button>
+      <button type="submit" id="login-button">Sign Up</button>
       <p>
         Already Have an account? <a href="index.html"> Sign In</a>
       </p>
@@ -37,3 +38,6 @@
     <!-- Create a paragraph element to display the message -->
     <p id="message" class="message"></p>
   </div>
+</body>
+<script src="scripts/signup.js"></script>
+</html>
