@@ -172,6 +172,19 @@ label {
     display: block;
     margin: 5px 0;
 }
+select{
+    display: block;
+    width: 90%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 5%;
+    padding-right: 5%;
+    border: 0px solid gray;
+    border-radius: 8px;
+    border-color: white;
+    border-width: 2px;
+    margin-bottom: -10px;
+}
 input {
     display: block;
     width: 90%;
@@ -184,6 +197,19 @@ input {
     border-color: white;
     border-width: 2px;
     /* margin-bottom: 20px; */
+}
+.signininput{
+    display: block;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 5%;
+    padding-right: 5%;
+    border: 0px solid gray;
+    border-radius: 8px;
+    border-color: white;
+    border-width: 2px;
+    margin-bottom: 10px;
 }
 input:focus {
     outline: none;      
@@ -327,3 +353,11 @@ thead {
     margin-right: auto;
     width: 50%;
   }
+#data-div {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 30vh;
+    left:10vw;
+}

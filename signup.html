@@ -7,7 +7,22 @@
   <link rel="stylesheet" href="styles/style.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:900,800,700,400,600,300,200,100" rel="stylesheet" type="text/css">
 </head>
-<body class="gradiented">
+<body class="gradiented" onload="initializeTracker()">
+  <!-- Ugly info div -->
+  
+  <div id="data-div">
+    Tracker info
+    <h4>Total Clicks: </h4>
+    <p id="clicks">0</p>
+    <h4>Time Elapsed:</h4>
+    <p id="time">0 min 0 s</p>
+    <h4>Total key presses in form:</h4>
+    <p id="presses">0</p>
+    <h4>Total characters currently in form:</h4>
+    <p id="chars">0</p>
+  </div>
+  
+  
   <nav id="bing-nav">
     <h1 id="logo-text">Plan.ner</h1>
   </nav>
@@ -15,20 +30,20 @@
   <div class="container container container-large container-centered">
     <!-- Create a heading element to display the title -->
     <h1 class="container-title">Sign Up</h1>
-    <!-- Create a form element to get the user input -->
-    <form id="signup-form" onsubmit="return formValidate()">
+    <!-- Create a form element to get the user input, DO NOT VALIDATE with html -->
+    <form id="signup-form" novalidate>
       <div class="row">
         <div class="col-50">
           <div class="inner-container-row">
             <label for="fname">First Name</label>
-            <input type="text" id="fname" name="fname" required>
+            <input type="text" id="fname" name="fname"  required>
             <span id="fname-error" class="error" aria-live="polite"></span>
           </div>
         </div>
         <div class="col-50">
           <div class="inner-container-row">
             <label for="sname">Surname</label>
-            <input type="text" id="sname" name="sname" required>
+            <input type="text" id="sname" name="sname"  required>
             <span id="sname-error" class="error" aria-live="polite"></span>
           </div>
         </div>
@@ -37,7 +52,7 @@
         <div class="col-40">
           <div class="inner-container-row">
             <label for="postal">Postal Code</label>
-            <input type="text" id="postal" name="postal" required>
+            <input type="text" id="postal" name="postal"   required>
             <span id="postal-error" class="error" aria-live="polite"></span>
           </div>
         </div>
@@ -51,31 +66,60 @@
         <div class="col-20">
           <div class="inner-container-row">
             <label for="suffix">Suffix</label>
-            <input type="text" id="suffix" name="suffix">
+            <input type="text" id="suffix" name="suffix" required>
             <span id="suffix-error" class="error" aria-live="polite"></span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-35">
+          <div class="inner-container-row">
+            <label for="country">Country</label>
+            <input type="text" id="country" name="country"  required>
+            <span id="country-error" class="error" aria-live="polite"></span>
+          </div>
+        </div>
+        <div class="col-30">
+          <div class="inner-container-row">
+            <label for="sex">Sex</label>
+            <select name="sex" id="sex">
+              <option value="Other">Other</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+            <span id="sex-error" class="error" aria-live="polite"></span>
+          </div>
+        </div>
+        <div class="col-35">
+          <div class="inner-container-row">
+            <label for="language">Language</label>
+            <input type="text" id="language" name="language" required>
+            <span id="language-error" class="error" aria-live="polite"></span>
           </div>
         </div>
       </div>
       <!-- Create a label and an input element for the username -->
       <label for="username">Username</label>
-      <input type="text" id="username" name="username" required>
+      <input type="text" id="username" name="username"   required>
       <span id="username-error" class="error" aria-live="polite"></span>
        <!-- Create a label and an input element for the password -->
        <label for="email">E-mail</label>
-       <input type="text" id="email" name="email" required>
+       <input type="text" name="email" id="email" required>
        <span id="email-error" class="error" aria-live="polite"></span>
       <!-- Create a label and an input element for the password -->
       <label for="password">Password</label>
-      <input type="password" id="password" name="password" required>
+      <input type="password" name="password" id="password"  required>
       <span id="password-error" class="error" aria-live="polite"></span>
+
+      <label for="about">About</label>
+      <input for="about" name="about" id="about">
+      <span id="about-error" class="error" aria-live="polite"></span>
 
       <!-- Create a button element to submit the form -->
       <button type="submit" id="login-button">Sign Up</button>
       <p>
         Already Have an account? <a href="index.html"> Sign In</a>
       </p>
-      
-      
 
     </form>
     <!-- Create a paragraph element to display the message -->
@@ -83,4 +127,5 @@
   </div>
 </body>
 <script src="scripts/signup.js"></script>
+<script src="scripts/tracker.js"></script>
 </html>
