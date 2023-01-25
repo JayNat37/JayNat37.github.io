@@ -141,7 +141,7 @@ a {
 }
 label {
     display: block;
-    margin: 10px 0;
+    margin: 5px 0;
 }
 input {
     display: block;
@@ -153,7 +153,12 @@ input {
     margin-right: 20px;
     border: 0px solid gray;
     border-radius: 8px;
-    margin-bottom: 20px;
+    border-color: white;
+    border-width: 2px;
+    /* margin-bottom: 20px; */
+}
+input:focus {
+    outline: none;      
 }
 .input-invalid {
     border-color: #C70606;
@@ -162,6 +167,14 @@ input {
 .input-valid {
     border-color:  #05a95c;
     border-width: 2px;
+}
+
+span.error {
+    margin: 5px ;
+    display: border-box;
+    color: #C70606;
+    font-size: 1.2vh;
+    /* match input here */
 }
 
 textarea {
@@ -233,6 +246,9 @@ button {
 }
 .title-small {
     font-size: 3vh;
+}
+#login-button {
+    margin-top: 20px;
 }
 #logo-text {
     color:white;
