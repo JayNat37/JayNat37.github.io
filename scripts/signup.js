@@ -49,14 +49,14 @@ addValidator(password, passwordError, (string) => {
     }
 })
 addValidator(email, emailError, (string) => {
+    var atIndex = string.indexOf('@');
+    var dotIndex = string.indexOf('.');
     
-});
-email.addEventListener("keyup", (event) => {
-    var emailString = email.value;
-    var atIndex = emailString.indexOf('@');
-    var dotIndex = emailString.indexOf('.');
-    if(at) {
-        email.setCustomValidity("Password too short");
+    if(atIndex == -1 || dotIndex == -1 
+            || atIndex > dotIndex || atIndex == 0 
+            || dotIndex == string.length -1) {
+        return ["Email needs to be in format joe@mail.com", 
+        "Email formated incorrectly"];
     }
+    return ["", ""];
 });
-
