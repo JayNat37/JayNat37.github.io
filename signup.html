@@ -56,17 +56,49 @@
           </div>
         </div>
       </div>
+      <div class="row">
+        <div class="col-35">
+          <div class="inner-container-row">
+            <label for="postal">Country</label>
+            <input type="text" id="postal" name="postal"  required>
+            <span id="postal-error" class="error" aria-live="polite"></span>
+          </div>
+        </div>
+        <div class="col-30">
+          <div class="inner-container-row">
+            <label for="houseno">Sex</label>
+            <select name="sex" id="sex">
+              <option value="Other">Other</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Tractor">Massey ferguson 1035 DI Dost</option>
+            </select>
+            <span id="houseno-error" class="error" aria-live="polite"></span>
+          </div>
+        </div>
+        <div class="col-35">
+          <div class="inner-container-row">
+            <label for="suffix">Language</label>
+            <input type="text" id="suffix" name="suffix" required>
+            <span id="suffix-error" class="error" aria-live="polite"></span>
+          </div>
+        </div>
+      </div>
       <!-- Create a label and an input element for the username -->
       <label for="username">Username</label>
       <input type="text" id="username" name="username" minlength="5" maxlength="12" pattern="^[A-Z][a-zA-Z0-9]{3,10}[\d\W]$" required>
       <span id="username-error" class="error" aria-live="polite"></span>
        <!-- Create a label and an input element for the password -->
        <label for="email">E-mail</label>
-       <input type="email" id="email" name="email" required>
+       <input type="email" name="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
        <span id="email-error" class="error" aria-live="polite"></span>
       <!-- Create a label and an input element for the password -->
       <label for="password">Password</label>
       <input type="password" name="password" pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[\W_]).{12,}$" required>
+      <span id="password-error" class="error" aria-live="polite"></span>
+
+      <label for="about">About</label>
+      <input for="about" name="about">
       <span id="password-error" class="error" aria-live="polite"></span>
 
       <!-- Create a button element to submit the form -->
@@ -74,8 +106,6 @@
       <p>
         Already Have an account? <a href="index.html"> Sign In</a>
       </p>
-      
-      
 
     </form>
     <!-- Create a paragraph element to display the message -->

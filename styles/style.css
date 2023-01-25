@@ -172,6 +172,20 @@ label {
     display: block;
     margin: 5px 0;
 }
+
+select{
+    display: block;
+    width: 90%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 5%;
+    padding-right: 5%;
+    border: 0px solid gray;
+    border-radius: 8px;
+    border-color: white;
+    border-width: 2px;
+    margin-bottom: -10px;
+}
 input {
     display: block;
     width: 90%;
@@ -183,7 +197,7 @@ input {
     border-radius: 8px;
     border-color: white;
     border-width: 2px;
-    /* margin-bottom: 20px; */
+    margin-bottom: -10px;
 }
 input:focus {
     outline: none;      
