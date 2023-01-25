@@ -21,14 +21,14 @@
         <div class="col-50">
           <div class="inner-container-row">
             <label for="fname">First Name</label>
-            <input type="text" id="fname" name="fname" pattern="^[a-zA-Z]+$" required>
+            <input type="text" id="fname" name="fname" required>
             <span id="fname-error" class="error" aria-live="polite"></span>
           </div>
         </div>
         <div class="col-50">
           <div class="inner-container-row">
             <label for="sname">Surname</label>
-            <input type="text" id="sname" name="sname" pattern="^[a-zA-Z]+$" required>
+            <input type="text" id="sname" name="sname" required>
             <span id="sname-error" class="error" aria-live="polite"></span>
           </div>
         </div>
@@ -37,21 +37,21 @@
         <div class="col-40">
           <div class="inner-container-row">
             <label for="postal">Postal Code</label>
-            <input type="text" id="postal" name="postal" pattern="^[0-9]{4}[A-Za-z]{2}$"  required>
+            <input type="text" id="postal" name="postal" minlength="6" maxlength="6"  required>
             <span id="postal-error" class="error" aria-live="polite"></span>
           </div>
         </div>
         <div class="col-40">
           <div class="inner-container-row">
             <label for="houseno">House No.</label>
-            <input type="text" id="houseno" name="houseno" required>
+            <input type="text" id="houseno" name="houseno">
             <span id="houseno-error" class="error" aria-live="polite"></span>
           </div>
         </div>
         <div class="col-20">
           <div class="inner-container-row">
             <label for="suffix">Suffix</label>
-            <input type="text" id="suffix" name="suffix" required>
+            <input type="text" id="suffix" name="suffix">
             <span id="suffix-error" class="error" aria-live="polite"></span>
           </div>
         </div>
@@ -59,9 +59,9 @@
       <div class="row">
         <div class="col-35">
           <div class="inner-container-row">
-            <label for="postal">Country</label>
-            <input type="text" id="postal" name="postal"  required>
-            <span id="postal-error" class="error" aria-live="polite"></span>
+            <label for="country">Country</label>
+            <input type="text" id="country" name="country"  required>
+            <span id="country-error" class="error" aria-live="polite"></span>
           </div>
         </div>
         <div class="col-30">
@@ -78,28 +78,28 @@
         </div>
         <div class="col-35">
           <div class="inner-container-row">
-            <label for="suffix">Language</label>
-            <input type="text" id="suffix" name="suffix" required>
-            <span id="suffix-error" class="error" aria-live="polite"></span>
+            <label for="language">Language</label>
+            <input type="text" id="language" name="language" required>
+            <span id="language-error" class="error" aria-live="polite"></span>
           </div>
         </div>
       </div>
       <!-- Create a label and an input element for the username -->
       <label for="username">Username</label>
-      <input type="text" id="username" name="username" minlength="5" maxlength="12" pattern="^[A-Z][a-zA-Z0-9]{3,10}[\d\W]$" required>
+      <input type="text" id="username" name="username" minlength="5" maxlength="12" required>
       <span id="username-error" class="error" aria-live="polite"></span>
        <!-- Create a label and an input element for the password -->
        <label for="email">E-mail</label>
-       <input type="email" name="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
+       <input type="email" name="email" required>
        <span id="email-error" class="error" aria-live="polite"></span>
       <!-- Create a label and an input element for the password -->
       <label for="password">Password</label>
-      <input type="password" name="password" pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[\W_]).{12,}$" required>
+      <input type="password" name="password" minlength="12" required>
       <span id="password-error" class="error" aria-live="polite"></span>
 
       <label for="about">About</label>
       <input for="about" name="about">
-      <span id="password-error" class="error" aria-live="polite"></span>
+      <span id="about-error" class="error" aria-live="polite"></span>
 
       <!-- Create a button element to submit the form -->
       <button type="submit" id="login-button">Sign Up</button>
